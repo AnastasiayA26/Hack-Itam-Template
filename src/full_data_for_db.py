@@ -278,7 +278,7 @@ hackathons = [
         "amount_of_people": random.randint(3, 10),
         "price": random.uniform(10.0, 100.0),
         "format": "Онлайн",
-        "city": "Online",
+        "city": None,
         "reg_link": "https://changellenge.com/championships/finodays/?mindbox-message-key=7645423325150183424&mindbox-click-id=41e9b62d-2bb4-4654-bb4a-659ab8d7fe93&utm_source=1&utm_medium=1&utm_term=changellenge&utm_campaign=2",
         "main_link": "https://365.finopolis.ru/finodays/?mindbox-message-key=7645423325150183424&mindbox-click-id=41e9b62d-2bb4-4654-bb4a-659ab8d7fe93&utm_source=1&utm_medium=1&utm_term=changellenge&utm_campaign=2"
     },
@@ -509,6 +509,7 @@ for request_data in requests:
     """, request_data)
 conn.commit()
 conn.close()
+
 
 
 
